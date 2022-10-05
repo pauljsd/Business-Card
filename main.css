@@ -1,3 +1,4 @@
+* {
   margin: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -5,10 +6,10 @@
 .card {
   background-color: #ddebf8;
   color: #2b2839;
-  border-bottom: 5px solid #d8cefe;
+  border: 5px solid #d8cefe;
   margin: 0 auto;
-  width: 400px;
-  padding: 20px;
+  width: 500px;
+  padding: 5px;
   display: flex;
   justify-content: space-around;
 }
@@ -23,4 +24,25 @@
 
 .card-naration {
   text-align: center;
+}
+
+/* mobile responsiveness */
+
+@media screen and (max-width: 580px) {
+  .pauljsd-image {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card {
+    width: 350px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .card-naration h3 {
+    font-size: 15px;
+  }
 }
